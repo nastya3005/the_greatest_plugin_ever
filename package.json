@@ -1,0 +1,29 @@
+{
+    "name": "code-comments",
+    "displayName": "Code Comments",
+    "description": "Легкий инструмент для добавления и управления комментариями в коде.",
+    "version": "0.0.1",
+    "publisher": "your-name",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "extension.addComment",
+          "title": "Add Comment"
+        }
+      ],
+      "keybindings": [
+      {
+        "command": "extension.addComment",
+        "key": "ctrl+5",
+        "when": "editorIsOpen"
+      }
+    ]
+    }
+  }
